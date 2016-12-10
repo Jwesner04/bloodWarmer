@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>677</width>
+    <height>387</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="main">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#main{
+	border-image: url(:/img/zimmer.jpg) 0 0 0 0 stretch stretch;
+	
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QWidget" name="menu" native="true">
+      <property name="styleSheet">
+       <string notr="true">#menu{
+	background-color: rgb(0, 0, 16);
+	max-height: 80px;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="menuBar">
+       <item>
+        <widget class="QPushButton" name="startButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#startButton{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 16);
+	border:none;
+	font-size: 35px;
+	text-align:center;
+	subcontrol-position: center;
+	font-weight: 520;
+	max-height: 40px;
+	margin-left:10px;
+}
+
+#startButton:hover{
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border:2px solid rgb(255, 255, 255); 
+}
+
+#startButton:focus {
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border:2px solid rgb(255, 255, 255); 
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Start</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="saveButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#saveButton{
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border:none;
+	font-size: 35px;
+	text-align:center;
+	subcontrol-position: center;
+	font-weight: 520;
+	max-height: 40px;
+}
+
+#saveButton:hover{
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border-top:2px solid rgb(255, 255, 255); 
+    border:2px solid rgb(255, 255, 255); 
+}
+
+#saveButton:focus {
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border:2px solid rgb(255, 255, 255); 
+}</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="shutdownButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#shutdownButton{
+color: rgb(255,255,255);
+	background-color:rgb(0, 0, 16);
+	border:none;
+	font-size: 35px;
+	text-align:center;
+	subcontrol-position: center;
+	font-weight: 520;
+	max-height: 40px;
+    padding-left: 10px;
+	padding-right:10px;
+}
+
+#shutdownButton:hover{
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border:2px solid rgb(255, 255, 255); 
+}
+
+#shutdownButton:focus {
+	color: rgb(255, 255, 255);
+	background-color:rgb(0, 0, 16);
+	border:2px solid rgb(255, 255, 255); 
+}</string>
+         </property>
+         <property name="text">
+          <string>Shutdown</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" rowspan="3" colspan="2">
+     <widget class="QWidget" name="controller" native="true">
+      <property name="styleSheet">
+       <string notr="true">#controller{
+	background-color: rgb(0, 0, 16,90%);
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	color: rgb(255, 255, 255);
+}    
+</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="1" colspan="2">
+        <widget class="QWidget" name="changeTempWrapper" native="true">
+         <property name="styleSheet">
+          <string notr="true">#changeTempWrapper{
+	background-color: rgb(0, 0, 16);
+}
+</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="3" column="0" colspan="2">
+           <widget class="QDoubleSpinBox" name="adjustTemp">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#adjustTemp{
+	/*background-color: rgb(54,61,77, 95%);*/
+	background-color: rgb(0, 0, 16);
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	border: none;
+	text-decoration: none;
+	font-weight: 520;
+
+	margin-right: 10px;
+}
+#adjustTemp::up-button{subcontrol-position: top right; font-size: 20px; width: 100px; }
+
+
+#adjustTemp::down-button{subcontrol-position: bottom right; width: 100px;  font-size:20px; }
+
+
+
+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QLabel" name="changeTempLabel">
+            <property name="styleSheet">
+             <string notr="true">#changeTempLabel{
+	font-size: 35px;
+	font-weight: 520;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	padding-bottom:2px;
+	color: rgb(255, 255, 255);
+	qproperty-wordWrap: true;
+	border-top:5px solid rgb(255, 255, 255, 20%); 
+}</string>
+            </property>
+            <property name="text">
+             <string>Set Temperature</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">	font-size: 35px;
+	font-weight: 520;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	color: rgb(255, 255, 255);
+	qproperty-wordWrap: true;
+	padding-right: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Timer:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="bagTimer">
+            <property name="styleSheet">
+             <string notr="true">#bagTimer{
+		/*background-color: rgb(54,61,77, 95%);*/
+	font-size: 35px;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	color: rgb(255, 255, 255);
+	font-weight: 520;
+}</string>
+            </property>
+            <property name="text">
+             <string>00:00:00</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QWidget" name="contentLeft" native="true">
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#contentLeft{
+		background-color: rgb(0, 0, 16);
+}
+</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0" colspan="4">
+           <widget class="QLabel" name="labelLeft1">
+            <property name="styleSheet">
+             <string notr="true">#labelLeft1{
+	font-size: 35px;
+	font-weight: 520;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	padding-bottom:2px;
+	color: rgb(255, 255, 255);
+	qproperty-wordWrap: true;
+	border-top:5px solid rgb(255, 255, 255, 20%); 
+	margin-left: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string>Blood Temperature</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QLabel" name="tempIconLeft">
+            <property name="styleSheet">
+             <string notr="true">#tempIconLeft{
+	border-image: url(:/img/1050_7.png) 0 0 0 0 stretch;
+	margin-bottom: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2" colspan="2">
+           <widget class="QLabel" name="bagTemp">
+            <property name="styleSheet">
+             <string notr="true">#bagTemp{
+	/*background-color: rgb(54,61,77, 95%);*/
+	font-size: 35px;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	color: rgb(255, 255, 255);
+	font-weight: 520;
+	margin-bottom: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string>0.0 °C</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">	font-size: 35px;
+	font-weight: 520;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	color: rgb(255, 255, 255);
+	qproperty-wordWrap: true;
+	padding-right: 10px;
+	margin-left:10px;</string>
+            </property>
+            <property name="text">
+             <string>Status:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="timerDescription">
+            <property name="styleSheet">
+             <string notr="true">#timerDescription{
+	font-size: 35px;
+	font-weight: 520;
+	qproperty-alignment: AlignCenter;
+	text-align:center;
+	color: rgb(241, 251, 253);
+	qproperty-wordWrap: true;
+	padding-right: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string>Idle</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionShutdown">
+   <property name="text">
+    <string>Shutdown</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

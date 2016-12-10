@@ -1,0 +1,2 @@
+xinput set-prop 'Microchip Technology Inc. AR1100 HID-MOUSE' 'Evdev Axis Inversion' 1 1
+
